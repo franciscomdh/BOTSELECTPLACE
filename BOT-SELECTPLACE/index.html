@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="I" disabled>Submit</button>
+    <script>
+        // Función para desbloquear el botón
+        function desbloquearBoton() {
+          var boton = document.getElementById("I");
+          boton.disabled = false;
+          boton.innerHTML = "Botón Desbloqueado";
+        }
+    
+        // Programar la función de desbloqueo después de 1 minuto (60000 ms)
+        setTimeout(desbloquearBoton, 20000);
+      </script>
+       <script>
+        // Función para mostrar el cartel
+        function mostrarCartel() {
+          alert("¡Hola! Has presionado el botón.");
+        }
+    
+        // Obtener el botón y agregar un evento de clic
+        var boton = document.getElementById("I");
+        boton.addEventListener("click", mostrarCartel);
+      </script>
+</body>
+</html>
